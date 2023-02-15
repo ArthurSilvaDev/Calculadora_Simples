@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+<div class="page_main">
+    <div class="main_calculadora">
+        <p id="visor_calculadora"></p>
+        <div class="teclado">
+            <div>
+                <input type="button" onclick="conectar()" class="btn_roxo" value="GIT">
+                <input type="button" onclick="clearAll()" class="btn_laranja" value="CE">
+                <input type="button" onclick="clearLast()" class="btn_laranja" value="<">
+                <input type="button" onclick="insert('/')" class="btn_laranja" value="/">
+            </div>
+            <div>
+                <input type="button" onclick="insert('7')" class="btn_branco" value="7">
+                <input type="button" onclick="insert('8')" class="btn_branco" value="8">
+                <input type="button" onclick="insert('9')" class="btn_branco" value="9">
+                <input type="button" onclick="insert('*')" class="btn_laranja" value="x">
+            </div>
+            <div>
+                <input type="button" onclick="insert('4')" class="btn_branco" value="4">
+                <input type="button" onclick="insert('5')" class="btn_branco" value="5">
+                <input type="button" onclick="insert('6')" class="btn_branco" value="6">
+                <input type="button" onclick="insert('-')" class="btn_laranja" value="-">
+            </div>
+            <div>
+                <input type="button" onclick="insert('1')" class="btn_branco" value="1">
+                <input type="button" onclick="insert('2')" class="btn_branco" value="2">
+                <input type="button" onclick="insert('3')" class="btn_branco" value="3">
+                <input type="button" onclick="insert('+')" class="btn_laranja" value="+">
+            </div>
+            <div>
+                <input type="button" onclick="insert('0')" class="btn_branco" value="0">
+                <input type="button" onclick="insert('.')" class="btn_branco" value=".">
+                <input type="button" onclick="resultado()" class="btn_resultado" value="=">
+            </div>
+         </div>
+
+    </div>
+</div>
+
+</body>
+</html>
